@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>Travel Trek | Booking </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="manifest" href="assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- StyleSheet link CSS -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/public/css/plugins.min.css" />
+  <link rel="stylesheet" href="/public/css/kaiadmin.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="/public/css/form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link rel="stylesheet" href="/public/css/demo.css" />
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- OUTER BG WRAPPER -->
+  <div class="bg-outer-wrapper booking-wrapper float-left w-100">
+    <!-- TOP BAR SECTION -->
+
+    <div class="clearfix"></div>
+    <!-- HEADER SECTION -->
+
+    <!-- BANNER SECTION -->
+    <section class="float-left w-100 banner-con sub-banner-con position-relative main-box">
+      <img alt="vector" class="vector1  img-fluid position-absolute" src="https://html.designingmedia.com/traveltrek/assets/images/vector1.png">
+      <img alt="vector" class="vector2 img-fluid position-absolute" src="https://html.designingmedia.com/traveltrek/assets/images/vector2.png">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-sm-12">
+            <div class="sub-banner-inner-con padding-bottom">
+              <h1 >IJM Travel</h1>
+              <!-- <h1> </h1> -->
+              <h1>Booking Form</h1>
+              <p class="font-size-20">Discover your next adventure with us. Find hidden gems, explore new horizons, and book your dream trip today. Your journey begins here!</p>
+              <!-- <p class="font-size-20">Lorem ipsum dolor sit amet consectetur adipiscing elit sed doeiusm tempor
+                incididunt
+                ut labore et dolore.
+              </p> -->
+              <div class="breadcrumb-con d-inline-block" data-aos="fade-up" data-aos-duration="600">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Booking</li>
+                </ol>
+              </div>
+              <!-- sub banner inner con -->
+            </div>
+            <!-- col-lg-6 -->
+          </div>
+          <div class="col-lg-5 d-none d-md-block">
+            <img src="https://html.designingmedia.com/traveltrek/assets/images/plan-trip-img.png" alt="">
+            <!-- <img src="/public/"> -->
+
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+
+      <!-- banner con -->
+    </section>
+    <!-- SEARCH BOOKING TAB SECTION -->
+    <div class="float-left w-100 search-booking-tab-con position-relative main-box mt-5">
+      <div class="container wow bounceInUp" data-wow-duration="2s"
+        style="visibility: visible; animation-duration: 2s; animation-name: bounceInUp;">
+        <ul class="nav nav-tabs text-center align-items-center justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button"
+              role="tab" aria-controls="hotel" aria-selected="true"> <img class="img-fluid d-block"
+                src="https://html.designingmedia.com/traveltrek/assets/images/hotel-icon.png" alt="icon"> Hotels</button>
+          <!-- </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="car-tab" data-bs-toggle="tab" data-bs-target="#car" type="button" role="tab"
+              aria-controls="car" aria-selected="false"><img class="img-fluid d-block"
+                src="https://html.designingmedia.com/traveltrek/assets/images/car-rental-icon.png" alt="icon"> Car
+              Rentals</button>
+          </li> -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="flight-tab" data-bs-toggle="tab" data-bs-target="#flight" type="button" role="tab"
+              aria-controls="flight" aria-selected="false"><img class="img-fluid d-block"
+                src="https://html.designingmedia.com/traveltrek/assets/images/flight-icon.png" alt="icon"> Travel</button>
+          </li>
+          <!-- <li class="nav-item" role="presentation">
+            <button class="nav-link" id="trip-tab" data-bs-toggle="tab" data-bs-target="#trip" type="button" role="tab"
+              aria-controls="trip" aria-selected="false"><img class="img-fluid d-block"
+                src="https://html.designingmedia.com/traveltrek/assets/images/trip-icon.png" alt="icon"> Trips</button>
+          </li> -->
+          <!-- <li class="nav-item" role="presentation">
+            <button class="nav-link" id="cruise-tab" data-bs-toggle="tab" data-bs-target="#cruise" type="button" role="tab"
+              aria-controls="cruise" aria-selected="false"><img class="img-fluid d-block"
+                src="https://html.designingmedia.com/traveltrek/assets/images/cruise-icon.png" alt="icon"> Cruises</button>
+          </li> -->
+          <!-- <li class="nav-item" role="presentation">
+            <button class="nav-link" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" type="button"
+              role="tab" aria-controls="activity" aria-selected="false"><img class="img-fluid d-block"
+                src="https://html.designingmedia.com/traveltrek/assets/images/activity-icon.png" alt="icon"> Activities</button>
+          </li> -->
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade " id="flight" role="tabpanel" aria-labelledby="flight-tab">
+            <div class=" text-left">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Passenger Name</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Email</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Phone Number</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="children">Gender </label>
+                            <select class="form-select" id="">
+                              <option value="Select" selected disabled>Select</option>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                              <option value="Others">Others</option>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="checkin">Date of birth</label>
+                            <input type="date" class="form-control" id="checkin" name="checkin" required="">
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="checkin">Travel Date</label>
+                            <input type="date" class="form-control" id="checkin" name="checkin" required="">
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="checkin">Travel from</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Travel to</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Return Date</label>
+                            <input type="date" class="form-control" id="checkin" name="checkin" required="">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Preferred Time</label>
+                            <input type="time" class="form-control" id="checkin" name="checkin" required="">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="checkin">Travel Mode</label>
+                            <select class="form-select" id="">
+                                <option value="Select" selected disabled>Select</option>
+                                <option value="Flight">Flight</option>
+                                <option value="Train">Train</option>
+                                <option value="Bus">Bus</option>
+                              </select>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="checkin">Preferred Seat</label>
+                            <select class="form-select" id="">
+                                <option value="Select" selected disabled>Select</option>
+                                <option value="Window">Window</option>
+                                <option value="Middle">Middle</option>
+                                <option value="Aisle">Aisle</option>
+                              </select>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row my-3 mt-5">
+                    <div class="col">
+                        <p class="text-start"><span class="bg-white p-3 rounded-3 text-black">Budget Details</span></p>
+                        
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Cost Center</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Programme</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Project</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Budget Impacted</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="destination-con">
+                            <label for="destination">Purpose</label>
+                            <textarea name="" id="" class="w-100 rounded-3" rows="3" cols="10"></textarea>
+                            <!-- <input type="text" class="form-control" placeholder="" id="destination"> -->
+                            <!-- col -->
+                          </div>
+                    </div>
+                   
+                    
+
+                </div>
+              <!-- tab-inner-con -->
+            </div>
+            <div class="green-btn d-inline-block mt-5">
+              <a href="#" class="d-inline-block">Book Now</a>
+            </div>
+          </div>
+    
+          <div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+            <div class=" text-left">
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Guest Name</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Guest Email</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Guest Phone Number</label>
+                            <input type="text" class="form-control" placeholder="" id="destination">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="children">Guest Gender </label>
+                            <select class="form-select" id="">
+                              <option value="Select" selected disabled>Select</option>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                              <option value="Others">Others</option>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Check in</label>
+                            <input type="date" class="form-control" id="checkin" name="checkin" required="">
+
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="destination-con">
+                            <label for="destination">Check Out</label>
+                            <input type="date" class="form-control" id="checkin" name="checkin" required="">
+                            <!-- col -->
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="children">Ratings</label>
+                            <select class="form-select" id="">
+                              <option value="Select" selected disabled>Select</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="">
+                            <label for="children">Remarks</label>
+                            <textarea name="" id="" class="w-100 rounded-3" rows="2" cols="10" spellcheck=""></textarea>
+                          </div>
+                    </div>
+                </div>
+              <!-- tab-inner-con -->
+            </div>
+            <div class="green-btn d-inline-block mt-5">
+                <a href="#" class="d-inline-block">Book Now</a>
+              </div>
+            <!-- flight tab -->
+          </div>
+
+        <!-- container -->
+      </div>
+      <!-- search booking tab con -->
+    </div>
+    <!-- WHAT WE SERVE SECTION -->
+    <section class="float-left w-100 what-we-serve-con position-relative main-box padding-top padding-bottom">
+      <img alt="vector" class="vector4 wow bounceInUp img-fluid position-absolute" data-wow-duration="2s"
+        src="https://html.designingmedia.com/traveltrek/assets/images/vector4.png">
+      <img alt="vector" class="vector5 wow bounceInUp img-fluid position-absolute" data-wow-duration="2s"
+        src="https://html.designingmedia.com/traveltrek/assets/images/vector5.png">
+      <div class="container wow bounceInUp" data-wow-duration="2s">
+        <div class="row">
+          <div class="col-lg-5">
+            <h4 class="mustard-text text-uppercase">What We Serve</h4>
+            <h2 class="text-uppercase text-right">Top Values <br>
+              For You!</h2>
+          </div>
+          <div class="col-xl-12 col-12 mr-auto ml-auto serve-outer text-center d-flex justify-content-center">
+            <div class="server-box ">
+              <img class="img-fluid" src="https://html.designingmedia.com/traveltrek/assets/images/serve-icon1.png" alt="icon">
+              <h4>Lot of Choices</h4>
+              <!-- <p class="mb-0">Lorem ipsum dolor sit ametc onsectetur adipiscing elit sed do eiusmod tempor incididun tut
+                labore et
+                dolore.</p> -->
+              <!-- server box -->
+            </div>
+            <div class="server-box ">
+              <img class="img-fluid" src="https://html.designingmedia.com/traveltrek/assets/images/serve-icon2.png" alt="icon">
+              <h4>Best Tour Guide</h4>
+              <!-- <p class="mb-0">Lorem ipsum dolor sit ametc onsectetur adipiscing elit sed do eiusmod tempor incididun tut
+                labore et
+                dolore.</p> -->
+              <!-- server box -->
+            </div>
+            <div class="server-box ">
+              <img class="img-fluid" src="https://html.designingmedia.com/traveltrek/assets/images/serve-icon3.png" alt="icon">
+              <h4>Easy Booking </h4>
+              <!-- <p class="mb-0">Lorem ipsum dolor sit ametc onsectetur adipiscing elit sed do eiusmod tempor incididun tut
+                labore et
+                dolore.</p> -->
+              <!-- server box -->
+            </div>
+            <!-- server outer -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- what we serve con -->
+    </section>
+    <!-- bg outer wrapper -->
+  </div>
+  <!-- FREQUESNTLY ASKED QUESTION SECTION -->
+
+
+  <!-- FOOTER SECTION -->
+
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top-btn" title="Back to Top"></button>
+  <script src="public/js/jquery-3.7.1.min.js"></script>
+  <script src="public/js/popper.min.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+
+  <!-- jQuery Scrollbar -->
+  <script src="public/js/jquery.scrollbar.min.js"></script>
+
+  <!-- Chart JS -->
+  <script src="public/js/chart.min.js"></script>
+
+  <!-- jQuery Sparkline -->
+  <script src="public/js/jquery.sparkline.min.js"></script>
+
+  <!-- Chart Circle -->
+  <script src="public/js/circles.min.js"></script>
+
+  <!-- Datatables -->
+  <script src="public/js/datatables.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="public/js/bootstrap-notify.min.js"></script>
+
+  <!-- jQuery Vector Maps -->
+  <script src="public/js/jsvectormap.min.js"></script>
+  <script src="public/js/jsvectormap/world.js"></script>
+
+  <!-- Sweet Alert -->
+  <script src="public/js/sweetalert.min.js"></script>
+
+  <!-- Kaiadmin JS -->
+  <script src="public/js/kaiadmin.min.js"></script>
+
+  <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+  <script src="public/js/setting-demo.js"></script>
+  <script src="public/js/demo.js"></script>
+  <script src="/public/js/form.js"></script>
+</body>
+
+</html>
